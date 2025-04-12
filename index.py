@@ -98,3 +98,14 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
+
+# Heatmap of average pollutants per city
+
+plt.figure(figsize=(14,8))
+sns.heatmap(hotspot_df.fillna(0).T, cmap="Reds", annot=False)
+plt.title("Heatmap: Average Pollutant Levels Across Cities")
+plt.xlabel("City")
+plt.ylabel("Pollutant")
+plt.tight_layout()
+plt.show()
+
