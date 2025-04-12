@@ -4,12 +4,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-df=pd.read_csv("pollution_data.csv")
+df=pd.read_excel("pollution_data.xlsx")
 
 # Removing whitespace from column names for ease
 df.columns = df.columns.str.strip()  
 
-        #data summary
+#data summary
 print(df.isnull().sum())
 
 print("Top 5 rows of dataset\n")
